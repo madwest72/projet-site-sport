@@ -1,32 +1,49 @@
-<footer class="bg-dark mt-5" style="color: #ff6600;">
+<footer class="bg-dark mt-5 border-top border-3 pt-5 pb-3" style="color: #ff6600; border-color: #ff6600 !important;">
+
     <div class="container-fluid">
-        <div class="row py-3 align-items-center">
-            <div class="row py-3 align-items-start">
-                <div class="col-md-5">
-                    <h5 class="fw-bold mb-2">Mouvement Maximal</h5>
-                    <p class="small mb-0" style="opacity: 0.8;">
-                        Mouvement Maximal (M&M) est un club nouvelle génération crée en 2010 dédié à l'explosivité et la haute intensité. Il rassemble des athlètes ambitieux focalisés sur la vitesse, le dépassement de soi et le refus du statu quo. Une vision résolument moderne et percutante de la performance pure.
-                    </p>
-                </div>
-                <div class="col-md-4 text-center">
-                    <h6 class="fw-bold mb-1"><a href="apropos.html" class="text-decoration-none" style="color: #ff6600;">Contact</a></h6>
-                    <div class="small" style="opacity: 0.8;">
-                        <span class="d-block d-lg-inline me-lg-2">lundi/vendredi : 8h/20h</span>
-                        <span class="d-block d-lg-inline">samedi/dimanche : 9h/16h</span>
-                    </div>
-                </div>
-                <div class="col-md-3 text-end">
-                    <h6 class="fw-bold mb-2">Suivez-nous</h6>
-                    <div class="d-flex gap-3 justify-content-end mb-2">
-                        <a href="https://www.facebook.com/?locale=fr_FR" class="fs-5" style="color: #ff6600;"><i class="bi bi-facebook"></i></a>
-                        <a href="https://www.instagram.com/" class="fs-5" style="color: #ff6600;"><i class="bi bi-instagram"></i></a>
-                        <a href="https://x.com" class="fs-5" style="color: #ff6600;"><i class="bi bi-twitter-x"></i></a>
-                    </div>
-                    <a href="apropos.html" class="small text-decoration-none" style="color: #ff6600; opacity: 0.8;">Mentions légales</a>
-                </div>
+
+        <div class="row gy-4 align-items-start">
+
+            <div class="col-12 col-md-5 text-center text-md-start">
+                <h5 class="fw-bold mb-3 text-uppercase">Mouvement Maximal</h5>
+                <p class="small mb-0" style="opacity: 0.9;">
+                    Club nouvelle génération dédié à l'explosivité et la haute intensité.<br>
+                    Rejoignez des athlètes ambitieux focalisés sur la performance pure.
+                </p>
             </div>
-                <p class="fw-lighter text-center m-0 pb-2 small" style="opacity: 0.8;">© 2026 Mouvement Maximal. Tous droits réservés.</p>
+
+            <div class="col-12 col-md-4 text-center">
+                <h5 class="fw-bold mb-3 text-uppercase">Contact</h5>
+                <ul class="list-unstyled small">
+                    <li class="mb-2">
+                        <a href="contact.php" class="text-decoration-none fw-bold" style="color: #ff6600;">Nous écrire</a>
+                    </li>
+                    <li class="mb-1">Lundi - Vendredi : 8h / 20h</li>
+                    <li>Samedi - Dimanche : 9h / 16h</li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-md-3 text-center text-md-end">
+                <h5 class="fw-bold mb-3 text-uppercase">Suivez-nous</h5>
+                <div class="d-flex gap-3 justify-content-center justify-content-md-end mb-3">
+                    <a href="#" class="fs-4" style="color: #ff6600;"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="fs-4" style="color: #ff6600;"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="fs-4" style="color: #ff6600;"><i class="bi bi-twitter-x"></i></a>
+                </div>
+                <a href="#" class="small text-decoration-none" style="color: #ff6600; opacity: 0.8;">Mentions légales</a>
+            </div>
+
         </div>
+
+        <hr class="my-4 opacity-100" style="border-color: #ff6600;">
+
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="small mb-0" style="opacity: 0.8;">© 2026 Mouvement Maximal. Tous droits réservés.</p>
+            </div>
+        </div>
+
+    </div>
 </footer>
 
 </body>
