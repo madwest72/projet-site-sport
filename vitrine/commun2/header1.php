@@ -27,11 +27,11 @@
                             Sport
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">foot</a></li>
-                            <li><a class="dropdown-item" href="#">basket</a></li>
-                            <li><a class="dropdown-item" href="#">natation</a></li>
-                            <li><a class="dropdown-item" href="#">athlétisme</a></li>
-                            <li><a class="dropdown-item" href="#">danse</a></li>
+                            <li><a class="dropdown-item" href="foot.php">foot</a></li>
+                            <li><a class="dropdown-item" href="basket.php">basket</a></li>
+                            <li><a class="dropdown-item" href="natation.php">natation</a></li>
+                            <li><a class="dropdown-item" href="athle.php">athlétisme</a></li>
+                            <li><a class="dropdown-item" href="danse.php">danse</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">

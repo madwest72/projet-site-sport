@@ -16,7 +16,7 @@
                 <h5 class="fw-bold mb-3 text-uppercase">Contact</h5>
                 <ul class="list-unstyled small">
                     <li class="mb-2">
-                        <a href="contact.php" class="text-decoration-none fw-bold" style="color: #ff6600;">Nous écrire</a>
+                        950 Avenue de la République 75011 Paris
                     </li>
                     <li class="mb-1">Lundi - Vendredi : 8h / 20h</li>
                     <li>Samedi - Dimanche : 9h / 16h</li>

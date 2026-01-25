@@ -29,7 +29,7 @@
                 <div class="card-body">
                     <h5 class="card-title fw-bold text-uppercase">Nouveauté</h5>
                     <p class="card-text">La Danse débarque au club ! Venez découvrir nos nouveaux cours tous les mardis soirs.</p>
-                    <a href="#" class="btn text-white fw-bold" style="background-color: #ff6600;">Voir +</a>
+                    <a href="danse.php" class="btn text-white fw-bold" style="background-color: #ff6600;">Voir +</a>
                 </div>
             </div>
         </div>
