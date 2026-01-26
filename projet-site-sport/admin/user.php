@@ -10,7 +10,8 @@
 include('../bdd/bdd.php');
 
 $requete = $bdd->prepare('SELECT * FROM utilisateur u 
-                          INNER JOIN sport s ON u.id = s.id_user');
+                          INNER JOIN sport s ON u.id = s.id_user
+                          ORDER BY u.admins DESC, u.nom ASC');
 $requete->execute();
 $inscrits = $requete->fetchAll();
 ?>
@@ -29,8 +30,13 @@ $inscrits = $requete->fetchAll();
         </tr>
     </thead>
     <tbody>
-        <?php foreach ($inscrits as $inscrit) { ?>
-            <tr>
+        <?php foreach ($inscrits as $inscrit) {
+            if ($inscrit['admins'] == 1) {
+                $styleTexte = ' fw-bold';
+            } else {
+                $styleTexte = '';
+            } ?>
+            <tr class="<?php echo $styleTexte; ?>">
                 <th scope="row"><?php echo $inscrit['id_user']; ?></th>
                 <td><?php echo $inscrit['nom']; ?></td>
                 <td><?php echo $inscrit['prenom']; ?></td>
