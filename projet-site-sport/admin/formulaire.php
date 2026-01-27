@@ -1,33 +1,25 @@
 <?php
-// On affiche les erreurs pour être sûr que tout va bien
-error_reporting(E_ALL);
-ini_set("display_errors", 1);
 
 include('commun/header.php');
 include("../bdd/bdd.php");
 
 if (isset($_POST['valider'])) {
 
-    // 1. RÉCUPÉRATION DES VARIABLES
     $nom = htmlspecialchars($_POST['nom']);
     $prenom = htmlspecialchars($_POST['prenom']);
     $mail = htmlspecialchars($_POST['mail']);
-
-    // ICI : On utilise bien l'orthographe correcte
+    $mdp = $_POST['mdp'];
     $adresse = htmlspecialchars($_POST['adresse']);
 
     $date = $_POST['date_naissance'];
     $tel = $_POST['tel'];
-    $mdp = password_hash($_POST['mdp'], PASSWORD_DEFAULT);
 
-    // 2. GESTION DU PRO ET DU ROLE
-    // Si la case est cochée -> 1, sinon -> 0
+
     $professionnel = isset($_POST['professionnel']) ? 1 : 0;
 
-    // Par défaut, tout le monde est 'membre' (tu te mettras 'admin' via phpMyAdmin)
+
     $role = "membre";
 
-    // 3. GESTION DES SPORTS
     $foot = isset($_POST['foot']) ? 1 : 0;
     $basket = isset($_POST['basket']) ? 1 : 0;
     $natation = isset($_POST['natation']) ? 1 : 0;
@@ -35,8 +27,6 @@ if (isset($_POST['valider'])) {
     $danse = isset($_POST['danse']) ? 1 : 0;
 
 
-    // 4. INSERTION UTILISATEUR
-    // J'insère bien dans les colonnes : professionnel et admins
     $requser = $bdd->prepare("INSERT INTO utilisateur (nom, prenom, email, adresse, date_naissance, tel, mdp, professionnel, admins) 
                               VALUES (:nom, :prenom, :mail, :adresse, :date_naissance, :tel, :mdp, :professionnel, :admins)");
 
@@ -49,11 +39,9 @@ if (isset($_POST['valider'])) {
     $requser->bindParam(':mdp', $mdp);
     $requser->bindParam(':professionnel', $professionnel, PDO::PARAM_INT);
     $requser->bindParam(':admins', $role);
-
     $requser->execute();
 
 
-    // 5. INSERTION SPORTS
     $id_du_nouveau = $bdd->lastInsertId();
 
     $reqSport = $bdd->prepare("INSERT INTO sport (id_user, foot, basket, natation, athle, danse) 

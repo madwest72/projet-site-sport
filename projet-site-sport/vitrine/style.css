@@ -17,3 +17,8 @@
 .navbar {
     border-bottom: 3px solid #ff6600;
 }
+
+table, th, td {
+  border: 1px solid #ff6600;
+  border-collapse: collapse;
+}
