@@ -37,7 +37,7 @@ $inscrits = $requete->fetchAll();
                 $styleTexte = '';
             } ?>
             <tr class="<?php echo $styleTexte; ?>">
-                <th scope="row"><?php echo $inscrit['id_user']; ?></th>
+                <th scope="row"><?php echo $inscrit['id']; ?></th>
                 <td><?php echo $inscrit['nom']; ?></td>
                 <td><?php echo $inscrit['prenom']; ?></td>
                 <td><?php echo $inscrit['email']; ?></td>
